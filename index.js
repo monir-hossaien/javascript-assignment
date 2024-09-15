@@ -13,7 +13,7 @@ function isOdd(num) {
         return false
     }
 } 
-console.log(isOdd(4))
+console.log(isOdd(5))
 
 
 //find smallest number in the Array
@@ -38,8 +38,36 @@ function sortArrayDescending(numbers){
 console.log(sortArrayDescending([3,5,6,2,7,8,30,55,60]));
 
 
+
+// Function to lowercase the first letter of a string
 function lowercaseFirstLetter(str){
     return str.charAt(0).toLowerCase() + str.slice(1);
 
 }
-console.log(lowercaseFirstLetter('Bangladesh'))
+console.log(lowercaseFirstLetter('Bangladesh'));
+
+
+
+
+// Function to count the number of vowels in a string
+function countVowels(str){
+    const vowels = 'aeiouAEIOU';
+
+    return Array.from(str).filter((char)=>vowels.includes(char)).length;
+
+};
+console.log(countVowels("Rabbil Hasan Rupom"));
+
+
+
+
+// Function to find the average of an array of numbers
+function findAverage (arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i]
+    }
+    return sum / arr.length
+
+}
+console.log(findAverage([20,30,50,10,40]));
